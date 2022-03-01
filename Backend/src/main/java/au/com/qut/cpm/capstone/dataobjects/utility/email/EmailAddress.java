@@ -5,7 +5,6 @@ import org.apache.commons.validator.routines.EmailValidator;
 
 
 public class EmailAddress {
-
     private static final EmailValidator emailValidator = EmailValidator.getInstance();
 
     @Getter

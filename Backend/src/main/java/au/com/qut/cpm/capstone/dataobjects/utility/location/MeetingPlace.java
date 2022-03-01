@@ -1,4 +1,4 @@
-package au.com.qut.cpm.capstone.dataobjects.event;
+package au.com.qut.cpm.capstone.dataobjects.utility.location;
 
 public class MeetingPlace {
 
