@@ -1,4 +1,4 @@
-package au.com.qut.cpm.capstone.dataobjects.utility.phonenumber;
+package au.com.qut.cpm.capstone.objects.utility.phonenumber;
 
 public class ContactNumber {
     private String contactNumber;

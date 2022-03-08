@@ -1,10 +1,9 @@
-package au.com.qut.cpm.capstone.dataobjects.event;
+package au.com.qut.cpm.capstone.objects.dataobjects.event;
 
-import au.com.qut.cpm.capstone.controllers.page.event.EventHost;
-import au.com.qut.cpm.capstone.dataobjects.utility.email.EmailAddress;
-import au.com.qut.cpm.capstone.dataobjects.socialmedia.SocialMedia;
-import au.com.qut.cpm.capstone.dataobjects.utility.location.MeetingPlace;
-import au.com.qut.cpm.capstone.dataobjects.utility.phonenumber.ContactNumber;
+import au.com.qut.cpm.capstone.objects.utility.email.EmailAddress;
+import au.com.qut.cpm.capstone.objects.utility.location.MeetingPlace;
+import au.com.qut.cpm.capstone.objects.utility.phonenumber.ContactNumber;
+import au.com.qut.cpm.capstone.objects.utility.socialmedia.SocialMedia;
 
 import java.sql.Timestamp;
 
@@ -12,7 +11,6 @@ public class EventListing {
 
     //Details tracked by the system.
 
-    private EventHost hostOfEvent;
     private int views;
 
     //Details Supplied by user when event is created / edited.

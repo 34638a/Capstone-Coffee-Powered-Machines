@@ -1,4 +1,4 @@
-package au.com.qut.cpm.capstone.dataobjects.utility.email;
+package au.com.qut.cpm.capstone.objects.utility.email;
 
 import lombok.Getter;
 import org.apache.commons.validator.routines.EmailValidator;
