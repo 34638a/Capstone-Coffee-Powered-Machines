@@ -34,6 +34,6 @@ public class EventListingController {
     @GetMapping(value="/listing")
     public String getListingPage(Model model) {
         model.addAttribute("event", exampleListing);
-        return "eventListing";
+        return "dynamic/event/eventListing";
     }
 }
