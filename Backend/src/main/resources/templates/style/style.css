@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body#index {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+row .copyright {
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10vh;
+}
+
+row .newsletter-social {
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+
+
+.flex-container {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container #heading {
+    margin-top: 100px;
+    height: 100px;
+}
+
+body#index {
+    background-image: url("#"); /*  */
+    background-color: #272121;
+    /* background-position: auto center; */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 1000px;
+}
+
+body#list {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url("#"); /* url */
+    background-color: #cccccc;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+body#detail {
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),url("#"); /*  */
+    background-color: #cccccc;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+nav .navbar-brand {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+nav .navbar-search {
+    padding-right: 10px;
+}
+
+nar #container-fluid  {
+    padding-right: 10px;
+}
+
+.car-search div {
+    padding: 5px;
+}
+
+#search-button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    justify-content: center;
+}
+
+section .row {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
