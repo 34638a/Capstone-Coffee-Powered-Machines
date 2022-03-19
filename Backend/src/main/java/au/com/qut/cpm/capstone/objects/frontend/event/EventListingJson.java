@@ -1,6 +1,6 @@
 package au.com.qut.cpm.capstone.objects.frontend.event;
 
-import au.com.qut.cpm.capstone.objects.utility.socialmedia.SocialMedia;
+import au.com.qut.cpm.capstone.system.socials.socialmedia.SocialMedia;
 import com.fasterxml.jackson.core.JacksonException;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;
