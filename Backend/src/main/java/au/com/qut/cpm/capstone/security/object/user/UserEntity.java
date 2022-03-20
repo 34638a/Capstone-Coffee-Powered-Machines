@@ -9,12 +9,15 @@ import org.springframework.lang.NonNull;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
+@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -32,6 +35,7 @@ public class UserEntity implements UserDetails {
     @NonNull
     private String username;
     private String password;
+    @ElementCollection
     private Set<AuthorityRoles> authorities = new HashSet<>();
 
 

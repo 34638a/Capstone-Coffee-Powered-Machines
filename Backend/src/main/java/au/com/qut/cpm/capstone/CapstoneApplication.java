@@ -1,7 +1,11 @@
 package au.com.qut.cpm.capstone;
 
+import au.com.qut.cpm.capstone.system.email.MailerService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.EventListener;
 
 @SpringBootApplication
 public class CapstoneApplication {
@@ -10,4 +14,12 @@ public class CapstoneApplication {
         SpringApplication.run(CapstoneApplication.class, args);
     }
 
+    @Autowired
+    private MailerService mailerService;
+
+    @EventListener(ApplicationReadyEvent.class)
+    public void onStart() {
+        System.out.println("Sending Mail Test");
+        mailerService.sendEmail("test@gamingutils.com", "<h1>Test Test</h1>Test", "Test Mail");
+    }
 }
