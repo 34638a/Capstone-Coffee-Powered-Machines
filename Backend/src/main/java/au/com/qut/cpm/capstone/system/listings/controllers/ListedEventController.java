@@ -40,8 +40,14 @@ public class ListedEventController {
         return "dynamic/event/events";
     }
 
-    @GetMapping("/e/{event}")
+    @GetMapping("/{event}")
     public String getEventPage(@PathVariable String event, Model model) {
+        model.addAttribute("event", exampleListing);
+        return "dynamic/event/eventListing";
+    }
+
+    @GetMapping("/{event}/changes")
+    public String getEventPageChanges(@PathVariable String event, Model model) {
         model.addAttribute("event", exampleListing);
         return "dynamic/event/eventListing";
     }

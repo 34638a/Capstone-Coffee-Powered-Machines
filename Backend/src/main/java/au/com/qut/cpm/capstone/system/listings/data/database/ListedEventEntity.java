@@ -36,4 +36,6 @@ public class ListedEventEntity {
     @ManyToOne(optional = false)
     @JoinColumn(name = "eventhost", nullable = false)
     private ListedEventHost listedEventHost;
+
+
 }
