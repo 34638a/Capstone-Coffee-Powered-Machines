@@ -100,9 +100,6 @@
                 <span>
                     <div class="row">
                         <div class="col-auto" style="padding-right: 0;">
-                            <div class="btn-group text-body">
-                              <button type="button" class="btn dropdown-toggle-split fas fa-2x fa-user-circle" data-bs-toggle="dropdown" aria-expanded="false">
-                              </button>
                               <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Settings</a></li>
                                 <li><a class="dropdown-item" href="#">Subscriptions</a></li>
@@ -112,8 +109,12 @@
                               </ul>
                             </div>
                         </div>
-                        <div class="col" style="padding-left: 0;"><a class="nav-link text-body" href="#">USER ACCOUNT</a></div>
-                    </div>
+
+                        <div class="btn-group text-body">
+                            <button type="button" class="btn dropdown-toggle-split fas fa-2x fa-user-circle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                            <div class="col-auto" style="padding-left: 0;"><a class="nav-link text-body" href="#">USER ACCOUNT</a></div>
+                        </div>
+
                 </span>
                 <div class="navbar-search">
                     <form class="d-flex">
@@ -125,7 +126,7 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="event-body">
         <div class="container">
             <div class="row row-striped">
                 <div class="col-2 text-right">

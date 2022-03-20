@@ -72,10 +72,10 @@ nav .navbar-brand {
 }
 
 nav .navbar-search {
-    padding-right: 10px;
+    padding: 25px;
 }
 
-nar #container-fluid  {
+nav .container-fluid  {
     padding-right: 10px;
 }
 
@@ -100,3 +100,11 @@ section .row {
     padding-right: 10px;
 }
 
+div.dropdown-btn {
+    padding-right: 1px;
+    justify-content: right;
+}
+
+.container-fluid#event-body {
+    color: black;
+}
