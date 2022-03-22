@@ -1,5 +1,8 @@
 package au.com.qut.cpm.capstone.system.listings.data.database;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
@@ -8,6 +11,9 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ListedEventEntity {
     @Id
     @Column(name = "id", nullable = false)
@@ -17,7 +23,7 @@ public class ListedEventEntity {
     /**
      * Timestamps are in UTC. Convert to local time in browser.
      */
-    public LocalDateTime eventStart, eventEnd;
+    private LocalDateTime eventStart, eventEnd;
 
     //Tracking Information
     @CreatedDate
@@ -37,5 +43,5 @@ public class ListedEventEntity {
     @JoinColumn(name = "eventhost", nullable = false)
     private ListedEventHost listedEventHost;
 
-
+    private String location64;
 }

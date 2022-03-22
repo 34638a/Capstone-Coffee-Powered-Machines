@@ -10,4 +10,8 @@ public class SocialMedia {
 
     private SocialMediaIcon socialMediaIcon;
     private String url;
+
+    public String getIcon() {
+        return this.socialMediaIcon.getIconClassStyle();
+    }
 }

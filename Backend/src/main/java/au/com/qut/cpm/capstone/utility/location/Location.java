@@ -3,7 +3,7 @@ package au.com.qut.cpm.capstone.utility.location;
 import lombok.Data;
 
 @Data
-public class EventLocation {
+public class Location {
 
     public enum LocationType {
         ONLINE,

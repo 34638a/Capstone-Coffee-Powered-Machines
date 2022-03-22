@@ -37,11 +37,11 @@
                     <h2 th:text="${event.getMonthYearStart()}">MMMM YYYY</h2>
                 </div>
                 <div class="col-10" style="padding:5vh;">
-                    <h3 class="text-uppercase"><strong th:text="${event.eventName}">ERROR: No Event Name</strong></h3>
+                    <h3 class="text-uppercase"><strong th:text="${event.getListingTitle()}">ERROR: No Event Name</strong></h3>
                     <ul class="list-inline">
-                        <li class="list-inline-item" th:each="socialMedia : ${event.socialMedia}">
-                            <a th:href="${socialMedia.url}">
-                                <i th:classappend="${socialMedia.icon}"></i>
+                        <li class="list-inline-item" th:each="socialMedia : ${event.getSocialMedia()}">
+                            <a th:href="${socialMedia.getUrl()}">
+                                <i th:classappend="${socialMedia.getIcon()}"></i>
                             </a>
                         </li>
                     </ul>
@@ -56,10 +56,10 @@
                         </li>
                         <li class="list-inline-item">
                             <i class="fas fa-location-arrow" aria-hidden="true"></i>
-                            <div th:text="${event.locationOfEvent.getLocationType()}"></div>
+                            <div th:text="${event.getLocation().getLocationType()}"></div>
                         </li>
                     </ul>
-                    <p style="padding-top:5vh; padding-bottom:5vh;" th:text="${event.eventDescription}"></p>
+                    <p style="padding-top:5vh; padding-bottom:5vh;" th:text="${event.getDescription()}"></p>
                 </div>
             </div>
         </div>
