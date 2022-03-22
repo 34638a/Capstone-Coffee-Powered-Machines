@@ -19,6 +19,12 @@ public class StaticContentPages {
         return "static/index";
     }
 
+    @GetMapping("about-us")
+    public String getAboutUsPage(Model model) {
+        model.addAttribute("name", "Test User");
+        return "static/index";
+    }
+
     @GetMapping("contact")
     public String getContactPage(Model model) {
         model.addAttribute("name", "Test User");
