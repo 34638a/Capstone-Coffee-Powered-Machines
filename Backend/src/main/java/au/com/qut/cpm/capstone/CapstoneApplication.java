@@ -20,6 +20,6 @@ public class CapstoneApplication {
     @EventListener(ApplicationReadyEvent.class)
     public void onStart() {
         System.out.println("Sending Mail Test");
-        mailerService.sendEmail("test@gamingutils.com", "<h1>Test Test</h1>Test", "Test Mail");
+        //mailerService.sendEmail("test@gamingutils.com", "<h1>Test Test</h1>Test", "Test Mail");
     }
 }
