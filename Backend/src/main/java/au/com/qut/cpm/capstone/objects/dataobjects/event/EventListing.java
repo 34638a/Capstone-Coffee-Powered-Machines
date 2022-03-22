@@ -1,9 +1,9 @@
 package au.com.qut.cpm.capstone.objects.dataobjects.event;
 
-import au.com.qut.cpm.capstone.objects.utility.email.EmailAddress;
-import au.com.qut.cpm.capstone.objects.utility.location.MeetingPlace;
-import au.com.qut.cpm.capstone.objects.utility.phonenumber.ContactNumber;
-import au.com.qut.cpm.capstone.objects.utility.socialmedia.SocialMedia;
+import au.com.qut.cpm.capstone.utility.email.EmailAddress;
+import au.com.qut.cpm.capstone.utility.location.MeetingPlace;
+import au.com.qut.cpm.capstone.utility.phonenumber.ContactNumber;
+import au.com.qut.cpm.capstone.system.socials.socialmedia.SocialMedia;
 
 import java.sql.Timestamp;
 

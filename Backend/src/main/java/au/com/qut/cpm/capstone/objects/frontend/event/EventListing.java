@@ -1,7 +1,7 @@
 package au.com.qut.cpm.capstone.objects.frontend.event;
 
-import au.com.qut.cpm.capstone.objects.utility.location.EventLocation;
-import au.com.qut.cpm.capstone.objects.utility.socialmedia.SocialMedia;
+import au.com.qut.cpm.capstone.utility.location.EventLocation;
+import au.com.qut.cpm.capstone.system.socials.socialmedia.SocialMedia;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
