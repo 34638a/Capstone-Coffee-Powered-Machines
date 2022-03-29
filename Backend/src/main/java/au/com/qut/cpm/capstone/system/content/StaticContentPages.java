@@ -14,7 +14,9 @@ public class StaticContentPages {
         model.addAttribute("name", "Test User");
 
         System.out.println(request.getUserPrincipal());
-        if (request.isUserInRole("test")) {
+        boolean authorised = request.isUserInRole("test");
+        model.addAttribute("isAuthorised", authorised);
+        if (authorised) {
             System.out.println("TEST CONFIRMED");
             return "static/legal";
         }
@@ -35,7 +37,7 @@ public class StaticContentPages {
 
     @GetMapping("contact")
     public String getContactPage(Model model) {
-        model.addAttribute("name", "Test User");
+        model.addAttribute("content_string", 10);
         return "static/contact";
     }
 }

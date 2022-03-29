@@ -30,7 +30,7 @@ public class ListedEventController {
         exampleListing.setEventEnd(LocalDateTime.of(2022, 9, 7, 18, 30));
         exampleListing.getSocialMedia().add(new SocialMedia().setSocialMediaIcon(new SocialMediaIcon().setSocialName("RSS").setIconClassStyle("fas fa-square-rss")).setUrl("https://fontawesome.com/icons/square-rss?s=solid"));
         exampleListing.getSocialMedia().add(new SocialMedia().setSocialMediaIcon(new SocialMediaIcon().setSocialName("Twitter").setIconClassStyle("fa-brands fa-twitter-square")).setUrl("https://fontawesome.com/icons/twitter-square?s=brands"));
-        exampleListing.setDescription(Faker.instance().lorem().paragraph(17));
+        exampleListing.setDescription(Faker.instance().lorem().paragraph(28));
         exampleListing.setLocation(new Location());
         exampleListing.getLocation().setLocationType(Location.LocationType.BOTH);
     }
