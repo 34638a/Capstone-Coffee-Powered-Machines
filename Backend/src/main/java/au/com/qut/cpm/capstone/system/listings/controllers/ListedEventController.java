@@ -14,6 +14,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
+import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDateTime;
 
 @Controller
@@ -42,8 +43,9 @@ public class ListedEventController {
     }
 
     @GetMapping("/{event}")
-    public String getEventPage(@PathVariable String event, Model model) {
+    public String getEventPage(@PathVariable String event, Model model, HttpServletRequest request) {
         model.addAttribute("event", exampleListing);
+        model.addAttribute("authorised", request.isUserInRole("test"));
         return "dynamic/event/eventListing";
     }
 

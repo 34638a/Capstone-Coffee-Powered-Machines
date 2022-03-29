@@ -30,10 +30,10 @@
 </head>
 <body layout:fragment="content">
     <div class="container-fluid">
-        <div class="position-absolute end-0">
+        <div th:if="${authorised}" class="position-absolute end-0">
             <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#edit-modal"><i class="fa-solid fa-pencil"></i></button>
         </div>
-        <div class="modal fade" tabindex="-1" id="edit-modal">
+        <div th:if="${authorised}" class="modal fade" tabindex="-1" id="edit-modal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
