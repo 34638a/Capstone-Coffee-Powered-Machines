@@ -6,11 +6,12 @@ import au.com.qut.cpm.capstone.system.socials.socialmedia.SocialMediaIcon;
 import au.com.qut.cpm.capstone.utility.location.Location;
 import com.github.javafaker.Faker;
 import com.github.javafaker.Lorem;
+import org.springframework.http.HttpRequest;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
 import java.time.LocalDateTime;
@@ -52,14 +53,24 @@ public class ListedEventController {
         return "dynamic/event/eventListing";
     }
 
+    @PostMapping("/{event}/update")
+    public ResponseEntity<String> updateEventLogs(@PathVariable String event, HttpRequest request) {
+
+
+        System.out.println("POST: " + event);
+
+        return new ResponseEntity<String>("Test", HttpStatus.OK);
+    }
+
+
     public String getEventAdminPage() {
         return "";
     }
 
 
     @GetMapping("/calendar")
-    public String getIndexPage(Model model) {
+    public String getCalendarPage(Model model) {
         model.addAttribute("name", "Test User");
-        return "static/index";
+        return "static/calendar";
     }
 }

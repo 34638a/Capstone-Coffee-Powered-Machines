@@ -30,8 +30,57 @@
 </head>
 <body layout:fragment="content">
     <div class="container-fluid">
+        <div class="position-absolute end-0">
+            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#edit-modal"><i class="fa-solid fa-pencil"></i></button>
+        </div>
+        <div class="modal fade" tabindex="-1" id="edit-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Edit this listing</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <script th:src="@{/js/listing-edits.js}"></script>
+                    <form id="edit-form">
+                        <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Event Title" aria-label="Event Title">
+                                        </div>
+                                        <div class="col-3">
+                                            DATE-START
+                                        </div>
+                                        <div class="col-3">
+                                            DATE-END
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!--Address/ Online Location-->
+                                        <div class="col">aa</div>
+                                    </div>
+                                    <div class="row">
+                                        <!--Content-->
+                                        <div class="col">
+                                            <textarea class="form-control" id="listing-description" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!--Social Media-->
+                                        <div class="col">aa</div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" onclick="postEditForm()">Save changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="container">
-            <div class="row row-striped">
+            <div class="row">
                 <div class="col-2 text-right">
                     <h1 class="display-4"><span class="badge badge-secondary" th:text="${event.getDayStart()}">00</span></h1>
                     <h2 th:text="${event.getMonthYearStart()}">MMMM YYYY</h2>
