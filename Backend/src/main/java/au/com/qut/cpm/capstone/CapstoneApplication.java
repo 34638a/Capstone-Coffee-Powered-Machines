@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 
+import javax.mail.MessagingException;
+
 @SpringBootApplication
 public class CapstoneApplication {
 
@@ -18,8 +20,11 @@ public class CapstoneApplication {
     private MailerService mailerService;
 
     @EventListener(ApplicationReadyEvent.class)
-    public void onStart() {
+    public void onStart() throws MessagingException {
         System.out.println("Sending Mail Test");
-        //mailerService.sendEmail("test@gamingutils.com", "<h1>Test Test</h1>Test", "Test Mail");
+        mailerService.sendEmailTemplate("bradsterrpi@gmail.com", "Test Mail");
+        mailerService.sendEmail("bradsterrpi@gmail.com","This is not a template", "Not the Template");
+        System.out.println("Tests sent successfully!");
+        return;
     }
 }
