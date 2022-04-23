@@ -18,6 +18,19 @@
     </properties>
     <dependencies>
 
+        <!-- Social Media Dependencies -->
+        <dependency>
+            <groupId>io.github.redouane59.twitter</groupId>
+            <artifactId>twittered</artifactId>
+            <version>2.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.twitter4j</groupId>
+            <artifactId>twitter4j-core</artifactId>
+            <version>[4.0,)</version>
+        </dependency>
+
+
         <!-- https://mvnrepository.com/artifact/org.webjars/font-awesome -->
         <dependency>
             <groupId>org.webjars</groupId>
