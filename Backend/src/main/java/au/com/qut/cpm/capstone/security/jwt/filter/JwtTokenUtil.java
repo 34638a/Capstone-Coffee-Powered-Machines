@@ -1,4 +1,4 @@
-package au.com.qut.cpm.capstone.security.filter;
+package au.com.qut.cpm.capstone.security.jwt.filter;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

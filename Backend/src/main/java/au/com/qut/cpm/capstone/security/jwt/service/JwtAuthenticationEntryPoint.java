@@ -1,4 +1,4 @@
-package au.com.qut.cpm.capstone.security.service;
+package au.com.qut.cpm.capstone.security.jwt.service;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
