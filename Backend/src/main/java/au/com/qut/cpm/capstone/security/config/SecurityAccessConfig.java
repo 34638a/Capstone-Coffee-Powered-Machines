@@ -55,7 +55,18 @@ public class SecurityAccessConfig extends WebSecurityConfigurerAdapter {
         // We don't need CSRF for this example
         httpSecurity.csrf().disable()
                 // dont authenticate requests to these groups
-                .authorizeRequests().mvcMatchers("/api/**", "/tests/**").permitAll()
+                .authorizeRequests().mvcMatchers(
+                        "/api/**",
+                        "/tests/**",
+                        "/webjars/**",
+                        "/",
+                        "/js/*",
+                        "/css/*",
+                        "/img/*",
+                        "/favicon.ico",
+                        "/listings/*",
+                        "/listings"
+                ).permitAll()
                 // all other requests need to be authenticated
                 .anyRequest().authenticated().and()
                 // make sure we use stateless session; session won't be used to
