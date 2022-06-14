@@ -5,7 +5,8 @@ let postEditForm = () =>  {
     console.log("Sending Form");
     let target = window.location.href + "/update";
     (async () => {
-        const rawResponse = await fetch(target, {
+        let rawResponse;
+        rawResponse = await fetch(target, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

@@ -1,7 +1,7 @@
 package au.com.qut.cpm.capstone.security.account.controller;
 
-import au.com.qut.cpm.capstone.io.email.EmailWrapper;
-import au.com.qut.cpm.capstone.io.email.MailerService;
+import au.com.qut.cpm.capstone.system.io.email.EmailWrapper;
+import au.com.qut.cpm.capstone.system.io.email.MailerService;
 import au.com.qut.cpm.capstone.security.account.object.database.UserAccount;
 import au.com.qut.cpm.capstone.security.account.object.database.UserAccountRepository;
 import au.com.qut.cpm.capstone.security.account.service.UserAccountDetailService;
