@@ -89,6 +89,9 @@ public class AdministrationTestService {
                 testAccounts.get(0).getId()
         ));
         publication = ContentPublicationService.getPublication(publication.getId());
+        System.out.println(publication.getId());
+        System.out.println(publication.getId());
+        System.out.println(publication.getId());
         Listing listing = publication.getPublicationContent().getJsonResourceFileAsObject(Listing.class);
         System.out.println(listing);
         System.out.println(new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(listing));

@@ -64,8 +64,19 @@ public class SecurityAccessConfig extends WebSecurityConfigurerAdapter {
                         "/css/*",
                         "/img/*",
                         "/favicon.ico",
-                        "/listings/*",
-                        "/listings"
+                        "/listing/*",
+                        "/listing",
+                        "/login",
+                        "/login/*",
+                        "/reset",
+                        "/reset/*",
+                        "/view",
+                        "/view/*",
+                        "/error",
+                        "/rss",
+                        "/atom",
+                        "/contact",
+                        "/legal"
                 ).permitAll()
                 // all other requests need to be authenticated
                 .anyRequest().authenticated().and()
